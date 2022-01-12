@@ -2,7 +2,7 @@ import { Text, View, TouchableOpacity, FlatList } from 'react-native';
 import React, { useState } from 'react';
 
 import { gStyle } from '../styles/style';
-
+ 
 export default function Main({ navigation }) {
 
     const [news, setNews] = useState([

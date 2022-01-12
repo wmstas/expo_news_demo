@@ -2,7 +2,7 @@ import { Text, View } from 'react-native';
 import { gStyle } from '../styles/style';
 
 export default function fullInfo({ route }) {
-
+ 
     return (
         <View style={gStyle.main}>
             <Text style={gStyle.title}> {route.params.name} </Text>

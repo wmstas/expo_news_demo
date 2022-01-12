@@ -4,7 +4,7 @@ import fullInfo from './components/fullInfo'
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer} from '@react-navigation/native';
 const Stack = createStackNavigator()
-
+ 
 export default function MainStack() {
 
   return (
