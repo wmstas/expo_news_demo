@@ -1,10 +1,10 @@
 import Main from './components/main'
-import fullInfo from './components/fullInfo'
+import ShowArticleForm from './components/showArticleForm'
 
 import { createStackNavigator } from '@react-navigation/stack';
-import { NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 const Stack = createStackNavigator()
- 
+
 export default function MainStack() {
 
   return (
@@ -15,12 +15,20 @@ export default function MainStack() {
         <Stack.Screen
           name="main"
           component={Main}
-          options={{ title: 'Новостная лента' }} />
+          options={{
+            title: 'Новостная лента',
+            headerStyle: { backgroundColor: "#ff6633", height: 40 },
+            headerTitleStyle: { fontWeight: 'bold' }
+          }} />
 
         <Stack.Screen
-          name="fullInfo"
-          component={fullInfo}
-          options={{ title: 'Статья' }} />
+          name="ShowArticleForm"
+          component={ShowArticleForm}
+          options={{
+            title: 'Статья',
+            headerStyle: { backgroundColor: "#ffcc66", height: 40 },
+            headerTitleStyle: { fontWeight: 'bold' }
+          }} />
 
       </Stack.Navigator>
     </NavigationContainer>
